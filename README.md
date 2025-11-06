@@ -15,7 +15,7 @@
 ・MySQL8.0
 
 ##ER図
-![ER図の説明](./Users/sugiyamashou/contact/images/.drawio.png)
+![ER図の説明](/Users/sugiyamashou/contact/images/.drawio.png)
 
 
 ## URL
