@@ -15,7 +15,7 @@
 ・MySQL8.0
 
 ##ER図
-![ER図の説明](./images/diagram.png)
+![ER図](./docker/images/diagram.png)
 
 
 ## URL
