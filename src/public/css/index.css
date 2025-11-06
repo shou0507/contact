@@ -1,0 +1,169 @@
+h1 {
+    color: #854d04;
+    text-align: center;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    font-size: 30px;
+    font-family: "Noto Serif JP", serif;
+}
+
+.contact-form__heading {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    color: #854d04;
+    font-size: 24px;
+    font-family: "Noto Serif JP", serif;
+}
+
+.form {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+}
+
+.form__group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form__label--required {
+    color: red;
+}
+
+.form__error {
+    height: 20px;
+    color: #ff0000;
+    text-align: left;
+}
+
+.form__input--text input,
+.form__input--textarea textarea {
+    padding: 10px;
+    width: 600px;
+    border-radius: 3px;
+    border: none;
+
+    appearance: none;
+    background-color: #f6f6f6;  /* 背景色 */
+}
+
+.form__input--textarea textarea {
+    height: 180px;
+}
+
+.form__label--item {
+    color: #854d04;
+}
+
+.form__input--name input {
+    padding: 10px;
+    width: 100%;
+    border-radius: 3px;
+    border: none;
+
+    appearance: none;
+    background-color: #f6f6f6;  /* 背景色 */
+}
+
+.form__input--name {
+    display: flex;
+    gap: 60px;
+    width: 630px;
+}
+
+.form__input--gender {
+    appearance: none;
+    color: #854d04;
+    display: flex;
+    margin-left: 50px;
+    justify-content: flex-start;  /* 右寄せ */
+    gap: 10px;                  /* ラジオボタン間の余白 */
+    width: 600px;               /* 他の入力欄と同じ幅に統一 */
+}
+
+.form__input--gender input[type="radio"] {
+    appearance: none;             /* 標準の見た目をリセット */
+    width: 18px;
+    height: 18px;
+    border: 1px solid #854d04;    /* 枠線を文字色と同じに */
+    border-radius: 50%;           /* 丸くする */
+    position: relative;
+    cursor: pointer;
+    transform: scale(1.3);        /* 少し大きく */
+    vertical-align: middle;        /* カーソルをポインターに */
+}
+
+.form__input--gender input[type="radio"]:checked {
+    background-color: #854d04;   /* 中身を塗る */
+    border-color: #854d04;       /* 枠も同色にして“リング感”を消す */
+}
+
+.form__input--phone {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 620px;
+    gap: 20px;
+}
+
+.form__input--phone input {
+    flex: 1;                    /* 均等幅にする（3つとも同じ幅） */
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    background-color: #f6f6f6;  /* 背景色 */
+    text-align: center;         /* 数字を中央寄せにして美しく */
+    box-sizing: border-box;
+}
+
+.form__input-select {
+    width: 620px;
+    position: relative;
+    text-align: left;
+}
+
+.form__input-select select {
+    width: 50%;
+    background-color: #f6f6f6;  /* 背景色 */
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    appearance: none;
+}
+
+.form__input-select::after {
+    content: "▼";
+    position: absolute;
+    right: 320px;
+    transform: translateY(-50%);
+    color: #854d04;
+    top: 20px;
+}
+
+.form__button {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.form__button-submit {
+    background-color: #68471b;  /* ブラウン背景 */
+    color: #fff;                /* 白文字 */
+    padding: 12px 40px;         /* 長方形にする（上下・左右の余白） */
+    border: none;               /* 枠線を消す */
+    border-radius: 3px;
+}
+
+.form__group-content input::placeholder,
+.form__group-content textarea::placeholder {
+    color: #c2b8ae;
+    opacity: 1;
+}
+
+.form__input-select select {
+    color: #c2b8ae;
+    opacity: 1;
+}

@@ -1,0 +1,115 @@
+h1 {
+    color: #854d04;
+    text-align: center;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    font-size: 30px;
+    font-family: "Noto Serif JP", serif;
+}
+
+.confirm__heading {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    color: #854d04;
+    font-size: 24px;
+    font-family: "Noto Serif JP", serif;
+}
+
+.confirm__content {
+    max-width: 1230px;
+}
+.form {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.confirm-table__inner {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.confirm-table {
+    border: 1px solid #ddd;
+}
+
+.confirm-table__header {
+    padding: 15px;
+}
+
+.confirm-table__header {
+    padding: 15px 50px;
+    width: 30%;
+    border-bottom: 1px solid #ddd;
+    background-color: #917e68;
+    color: #fff;
+    font-size: 15px;
+    text-align: left;
+}
+
+.confirm-table__text {
+    gap: 8px;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    color: #854d04;
+}
+
+
+
+.confirm-table__text input {
+    width: auto;
+    outline: none;
+    border: none;
+    color: #854d04;
+}
+
+.confirm-table__text--name {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.confirm-table__text--name input[name="first_name"] {
+    margin-left: -100px;
+}
+
+.confirm-table__textarea input {
+    outline: none;
+    border: none;
+    height: 100px;
+    color: #854d04;
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+.confirm-table__row:last-child .confirm-table__header,
+.confirm-table__row:last-child .confirm-table__text {
+    border-bottom-width: 0;
+}
+
+.form__button {
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+
+.form__button-submit {
+    background-color: #68471b;  /* ブラウン背景 */
+    padding: 10px 40px;         /* 長方形にする（上下・左右の余白） */
+    border: none;               /* 枠線を消す */
+    border-radius: 3px;
+    color: #fff;
+    margin-left: 60px;
+}
+
+.form__button-back {
+    color: #917e68;
+    background-color: #fff;
+    text-decoration: none;
+    border: none;
+    padding: 10px 40px;
+    font-size: 15px;
+}

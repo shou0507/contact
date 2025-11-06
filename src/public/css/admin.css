@@ -1,0 +1,309 @@
+h1 {
+    color: #854d04;
+    text-align: center;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-weight: 300;
+    font-family: "Noto Serif JP", serif;
+    border-bottom: 1px solid #ddd;
+}
+
+h2 {
+    font-weight: 300;
+    font-family: "Noto Serif JP", serif;
+}
+
+
+
+.search-form__heading {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: #854d04;
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+
+.ghost-btn {
+    position: absolute;
+    top: 30px;
+    right: 130px;
+    padding: 3px 18px;
+    font-size: 14px;
+    color: #9a8b7b;
+    background: #f7f3ef;
+    border: 1px solid #e6e0da;
+    border-radius: 3px;
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.search-form__input,
+.search-form__gender,
+.search-form__contact,
+.search-form__date {
+    padding: 8px 10px;
+    appearance: none;
+}
+
+.search-form__input {
+    width: 300px;
+    background-color: #f6f6f6;  /* 背景色 */
+    border: 1px solid  black;
+    border: 1px solid rgba(0, 0, 0, 0.2); /* 黒を20%の透明度で */
+}
+
+.search-form__gender {
+    width: 70px;
+    background-color: #e8e5e5;  /* 背景色 */
+    border: 1px solid rgba(0, 0, 0, 0.2); /* 黒を20%の透明度で */
+}
+
+.search-form__contact {
+    width: 170px;
+    background-color: #e8e5e5;  /* 背景色 */
+    border: 1px solid rgba(0, 0, 0, 0.2); /* 黒を20%の透明度で */
+}
+
+.search-form__date {
+    width: 100px;
+    border: 1px solid  black;
+    background-color: #e8e5e5;  /* 背景色 */
+    border: 1px solid rgba(0, 0, 0, 0.2); /* 黒を20%の透明度で */
+}
+
+.search-form__button--search {
+    background-color: #68471b;  /* ブラウン背景 */
+    color: #fff;                /* 白文字 */
+    padding: 8px 30px;         /* 長方形にする（上下・左右の余白） */
+    border: none;               /* 枠線を消す */
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.search-form__button--reset {
+    background-color: #dfc39d;  /* ブラウン背景 */
+    color: #fff;                /* 白文字 */
+    padding: 12px 20px;         /* 長方形にする（上下・左右の余白） */
+    border: none;               /* 枠線を消す */
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.admin-table {
+    width: 75%;
+    margin: 0 auto;
+    border-collapse: collapse; /* 隙間を消す */
+    table-layout: fixed;       /* 列幅を固定して整える */
+    border: 1px solid #ccc;    /* 外枠だけ線を出す */
+}
+
+/* すべてのセルに余白と整列を設定（内側線なし） */
+.admin-table th,
+.admin-table td {
+    padding: 8px 12px;
+    text-align: left;
+    border: none;              /* 内側線を消す */
+    word-break: break-word;    /* テキスト折り返し */
+}
+
+.admin-table tr {
+  border-bottom: 1px solid #e0e0e0; /* ← 行を区切る線 */
+}
+
+.admin-table td {
+    color: #854d04;
+}
+
+/* ヘッダー背景 */
+.admin-table th {
+    color: #fff;             /* 文字色 */
+    background: #68471b;
+    height: 56px;
+}
+
+/* 最後の列（空欄）は狭くする */
+.admin-table th:last-child,
+.admin-table td:last-child {
+    width: 30px;
+}
+
+/* メールアドレスとお問い合わせの列が被らないように */
+.admin-table th:nth-child(3),
+.admin-table td:nth-child(3) {
+    width: 30%;
+}
+.admin-table th:nth-child(4),
+.admin-table td:nth-child(4) {
+    width: 25%;
+}
+
+.admin-table th:nth-child(5),
+.admin-table td:nth-child(5) {
+  width: 96px;          /* 例：96px。80〜120pxで調整 */
+  text-align: center;   /* 中央寄せ（任意） */
+}
+
+.square-pagination {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 170px;
+    margin-bottom: 30px;
+}
+
+.square-pagination nav {
+  font-size: 0; /* ← 空白削除の決め手 */
+}
+
+.square-pagination nav a,
+.square-pagination nav span {
+  font-size: 14px; /* 子要素で戻す */
+}
+
+.square-pagination { text-align: center; }
+.square-pagination nav a,
+.square-pagination nav span[aria-current],
+.square-pagination nav span[aria-disabled] {
+    display: inline-flex;
+    width: 28px;
+    height: 28px;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 4px; /* 完全な四角にしたいなら 0 */
+    text-decoration: none;
+    color: #333;
+    background: #fff;
+}
+.square-pagination nav span[aria-current="page"] {
+    background: #7b6b59;
+    color: #fff;
+    border-color: #7b6b59;
+}
+.square-pagination nav a:hover { background: #f5f5f5; }
+
+
+/* 「Showing 1 to 7 of 35 results」を消す（sm以上の時の左側ブロック） */
+.square-pagination nav .sm\:justify-between > div:first-child {
+    display: none;
+}
+
+/* 小画面用の「前/次だけ」のブロックをまるごと消す（任意） */
+.square-pagination nav .sm\:hidden {
+    display: none;
+}
+
+/* 数字側に残る「Previous」「Next」リンクを消す（有効/無効どちらも） */
+.square-pagination nav a[rel="prev"],
+.square-pagination nav a[rel="next"],
+.square-pagination nav span[aria-label*="Previous"],
+.square-pagination nav span[aria-label*="Next"] {
+    display: none;
+}
+
+.detail-btn {
+    display: inline-block;
+    writing-mode: horizontal-tb; /* ← 横書きに固定 */
+    padding: 4px 10px;          /* コンパクトに */
+    font-size: 13px;
+    color: #d6c09f;             /* ← 薄いブラウン系文字色 */
+    background: #fff;
+    border: 1px solid #d8cfc6;  /* ← 枠線を薄く */
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-close {
+    border-radius: 50%;              /* 丸くする */
+    border: 1px solid #854d04;       /* 枠線：茶色 */
+    color: #854d04;
+    text-decoration: none;
+    right: 0;
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-box {
+    background: #fff;
+    border-radius: 5px;
+    width: 600px;
+    height: 600px;
+    max-width: 90%;
+    position: relative;
+    color: #854d04;
+    justify-content: center;
+    padding-top: 30px;
+    border: 1px solid #333;
+}
+
+.confirm-table__text--name {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.confirm-table__text--name input:last-child {
+    margin-left: -100px;
+}
+
+.confirm-table__inner {
+    margin-left: 70px;
+    margin-bottom: 50px;
+}
+
+.confirm-table__row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.confirm-table__row input {
+    border: none;
+    color: #854d04;
+    padding: left;
+}
+
+.confirm-table__row th {
+    width: 150px;
+    text-align: left;
+    color: #854d04;
+}
+
+.confirm-table__row td {
+    padding-left: 100px;
+    flex: 1;
+}
+
+.btn-danger {
+    display: block;
+    margin: 25px auto 0;
+    background: red;
+    border: none;
+    color: white;
+    padding:5px 20px;
+}
